@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-LbvzqmJrx_)
+- Live Site URL: [Live site URL](https://amazing-horse-285a9a.netlify.app/)
 
 ## My process
 
@@ -43,4 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [CHRISTIAN](https://www.frontendmentor.io/profile/flchris)
+- Frontend Mentor - [Christian](https://www.frontendmentor.io/profile/flchris)
