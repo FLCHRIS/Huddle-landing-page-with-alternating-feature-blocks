@@ -1,0 +1,25 @@
+$Pink: hsl(322, 100%, 66%);
+$VeryPaleCyan: hsl(193, 100%, 96%);
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$GrayishBlue: hsl(208, 11%, 55%);
+
+$fontOpenSans: 'Open Sans', sans-serif; /* Body, Call-to-actions */
+$fontPoppins: 'Poppins', sans-serif; /* Headings */
+
+html {
+    font-size: 62.5%;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+body {
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $Pink;
+        border-radius: 2px;
+    }
+}

@@ -2,139 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3478c33dcb.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
 <body>
   <header class="header">
-    <div class="container header-container">
-      <nav class="header-logo">
-        <a href="#">
-          <img src="./images/logo.svg" alt="Huddle" class="logo-img">
+    <section class="header__nav nav container" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <a href="#" class="nav__logo" aria-label="Go to Huddle">
+        <img src="./images/logo.svg" alt="Huddle">
+      </a>
+      <a href="#" class="nav__cta">
+        Try It Free
+      </a>
+    </section>
+    <section class="header__data data container">
+      <div class="data__container" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <h1 class="data__title">
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="data__paragraph">
+          Huddle re-imagines the way build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+        </p>
+        <a href="#" class="data__cta">
+          Get Started For Free
         </a>
-        <a href="#" class="header-cta">
-          Try It Free
-        </a>
-      </nav>
-      <section class="header-information">
-        <div class="information-data">
-          <h1 class="information-title">
-            Build The Community Your Fans Will Love
-          </h1>
-          <p class="information-paragraph">
-            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-            Create connections with your users as you engage in genuine discussion.
-          </p>
-          <a href="#" class="information-cta">
-            Get Started For Free
-          </a>
-        </div>
-        <picture class="information-picture">
-          <img src="./images/illustration-mockups.svg" alt="illustration-mockups" class="picture-img">
-        </picture>
-      </section>
-    </div>
+      </div>
+      <img src="./images/illustration-mockups.svg" alt="" class="data__illustration" data-aos="flip-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+    </section>
   </header>
   <main class="main">
-    <div class="container main-container">
-      <div class="card">
-        <picture class="card-picture card-picture-active">
-          <img src="./images/illustration-grow-together.svg" alt="illustration-grow-together" class="card-img">
-        </picture>
-        <div class="card-data card-data-active">
-          <h2 class="card-title">
+    <section class="main__card cards container">
+      <div class="cards__card" data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <img src="./images/illustration-grow-together.svg" alt="" class="card__illustration">
+        <div class="card__container">
+          <h2 class="card__title">
             Grow Together
           </h2>
-          <p class="card-paragraph">
-            Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. 
+          <p class="card__paragraph">
+            Generate meaningful discussions with your audience and build a strong, loyal community. Think  of the insightful conversations you miss out on with a feedback form.
           </p>
         </div>
       </div>
-      <div class="card card-active">
-        <picture class="card-picture">
-          <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation" class="card-img">
-        </picture>
-        <div class="card-data ">
-          <h2 class="card-title">
+      <div class="cards__card" data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <img src="./images/illustration-flowing-conversation.svg" alt="" class="card__illustration card__illustration-active">
+        <div class="card__container card__container-active">
+          <h2 class="card__title">
             Flowing Conversations
           </h2>
-          <p class="card-paragraph">
+          <p class="card__paragraph">
             You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
           </p>
         </div>
       </div>
-      <div class="card">
-        <picture class="card-picture card-picture-active">
-          <img src="./images/illustration-your-users.svg" alt="illustration-your-users" class="card-img">
-        </picture>
-        <div class="card-data card-data-active">
-          <h2 class="card-title">
+      <div class="cards__card" data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <img src="./images/illustration-your-users.svg" alt="" class="card__illustration">
+        <div class="card__container">
+          <h2 class="card__title">
             Your Users
           </h2>
-          <p class="card-paragraph">
-            It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+          <p class="card__paragraph">
+            It takes no time at all to integrate Huddle with your app's authentication solutions. This means, once signed in to your app, your users can start chatting immediately.
           </p>
         </div>
       </div>
-      <div class="main-question">
-        <h2 class="question-subtitle">
+    </section>
+    <section class="main__question question container">
+      <div class="question__container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <h2>
           Ready To Build Your Community?
         </h2>
-        <a href="#" class="question-cta">
+        <a href="#" class="question__cta">
           Get Started For Free
         </a>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <picture class="footer-picture">
-        <img src="./images/logo.svg" alt="logo" class="footer-img">
-      </picture>
-      <section class="footer-data">
-        <div class="footer-contact">
-          <p class="contact-paragraph contact-paragraph-active">
-            <img src="./images/icon-location.svg" alt="icon-location" class="paragraph-icon">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-          <p class="contact-paragraph">
-            <img src="./images/icon-phone.svg" alt="icon-phone" class="paragraph-icon">
+    <section class="footer__information information container">
+      <img src="./images/logo.svg" alt="Huddle" class="information__img" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine">
+      <div class="information__container">
+        <div class="information__contact contact" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine">
+          <a href="#" class="contact__cta">
+            <img src="./images/icon-location.svg" alt="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eismod tempor incididunt ut labore et dolore magna aliqua.
+
+          </a>
+          <a href="#" class="contact__cta contact__cta-active">
+            <img src="./images/icon-phone.svg" alt="">
             +1-543-123-4567
-          </p>
-          <p class="contact-paragraph">
-            <img src="./images/icon-email.svg" alt="icon-email" class="paragraph-icon">
-            example@huddle.com
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="#" class="links-cta">About Us</a>
-          <a href="#" class="links-cta">What We Do</a>
-          <a href="#" class="links-cta">FAQ</a>
-        </div>
-        <div class="footer-links">
-          <a href="#" class="links-cta">Career</a>
-          <a href="#" class="links-cta">Blog</a>
-          <a href="#" class="links-cta">Contact Us</a>
-        </div>
-        <div class="footer-media">
-          <div class="media-links">
-            <i class="fa-brands fa-facebook-f fa-lg"></i>
-            <i class="fa-brands fa-twitter fa-lg"></i>
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </div>
-          <a href="#" class="footer-copy">
-            &copy; Copyright 2018 Huddle. All rights reserved.
+          </a>
+          <a href="#" class="contact__cta contact__cta-active">
+            <img src="./images/icon-email.svg" alt="">
+            example@fylo.com
           </a>
         </div>
-      </section>
-    </div>
-    <p class="attribution">
-      Coded by <a href="https://github.com/flchris" target="_blank">CHRIS FL</a>.
-    </p>
+        <div class="information__information aboutUs" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
+          <div class="aboutUs__about">
+            <a href="#">About Us</a>
+            <a href="#">What We Do</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="aboutUs__about aboutUs__about-active">
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="information__social" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
+          <a href="#" aria-label="Go to Facebook"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+          <a href="#" aria-label="Go to Twitter"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          <a href="#" aria-label="Go to Instagram"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        </div>
+      </div>
+    </section>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

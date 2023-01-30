@@ -1,0 +1,118 @@
+@import "_variables";
+
+.main {
+    font-size: 1.5rem;
+    position: relative;
+    .cards {
+        .cards__card {
+            width: 90%;
+            margin: 4em auto;
+            box-shadow: 0px 0px 10px 0px rgba($VeryDarkCyan, .1);
+            border-radius: 1em;
+            padding: 2em;
+            .card__container {
+                .card__title {
+                    text-align: center;
+                    font-family: $fontPoppins;
+                    font-size: 2.1rem;
+                    color: $VeryDarkCyan;
+                    margin: 1.5em 0 .5em;
+                }
+                .card__paragraph {
+                    text-align: center;
+                    color: $GrayishBlue;
+                    font-family: $fontOpenSans;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .question {
+        margin-bottom: 7em;
+        .question__container {
+            position: absolute;
+            bottom: -12.5em;
+            left: 0;
+            right: 0;
+            max-width: 33em;
+            width: 90%;
+            margin: .5em auto;
+            padding: 2em 1em;
+            border-radius: 1em;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 0px rgba($VeryDarkCyan, .1);
+            h2 {
+                font-size: 2.1rem;
+                text-align: center;
+                font-family: $fontPoppins;
+                color: $VeryDarkCyan;
+            }
+            a {
+                display: block;
+                width: max-content;
+                margin: 2em auto 0;
+                background-color: $Pink;
+                color: #fff;
+                font-family: $fontOpenSans;
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-decoration: none;
+                padding: .8em 2.2em;
+                border-radius: 2em;
+                transition: background-color .3s;
+                &:hover {
+                    background-color: rgba($Pink, .6);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .main {
+        font-size: 1.5rem;
+        position: relative;
+        .cards {
+            .cards__card {
+                width: 90%;
+                margin: 6em auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2em;
+                grid-template-areas: "data img";
+                align-items: center;
+                .card__illustration {
+                    grid-area: img;
+                }
+                .card__container {
+                    grid-area: data;
+                    .card__title {
+                        text-align: start;
+                        font-size: 2.3rem;
+                        margin: 0 0 .5em;
+                    }
+                    .card__paragraph {
+                        text-align: start;
+                        font-size: 1.6rem;
+                    }
+                }
+                .card__illustration-active {
+                    grid-area: data;
+                }
+                .card__container-active {
+                    grid-area: img;
+                }
+            }
+        }
+        .question {
+            .question__container {
+                h2 {
+                    font-size: 2.3rem;
+                }
+                a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

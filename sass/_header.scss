@@ -1,0 +1,118 @@
+@import "_variables";
+
+.header {
+    font-size: 1.5rem;
+    background-color: $VeryPaleCyan;
+    padding: 1px;
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2em auto;
+        padding: 1em 0;
+        .nav__logo {
+            img {
+                width: 10em;
+            }
+        }
+        .nav__cta {
+            background-color: #fff;
+            display: block;
+            padding: .6em 2.2em;
+            border-radius: 2em;
+            box-shadow: 0px 0px 10px 0px rgba($VeryDarkCyan, .2);
+            font-family: $fontPoppins;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: $VeryDarkCyan;
+            text-decoration: none;
+            transition: color .3s;
+            margin-right: .3em;
+            &:hover {
+                color: $GrayishBlue;
+            }
+        }
+    }
+    .data {
+        .data__container {
+            .data__title {
+                text-align: center;
+                font-family: $fontPoppins;
+                font-size: 2.5rem;
+                color: $VeryDarkCyan;
+            }
+            .data__paragraph {
+                text-align: center;
+                font-size: 1.5rem;
+                color: $VeryDarkCyan;
+                font-family: $fontOpenSans;
+                margin: 2em 0;
+            }
+            .data__cta {
+                display: block;
+                width: max-content;
+                margin: 0 auto 2em;
+                background-color: $Pink;
+                padding: .6em 2.5em;
+                font-size: 1.5rem;
+                border-radius: 2em;
+                color: #fff;
+                font-family: $fontOpenSans;
+                font-weight: 700;
+                text-decoration: none;
+                transition: background-color .3s;
+                &:hover {
+                    background-color: rgba($Pink, .6);
+                }
+            }
+        }
+        .data__illustration {
+            margin: 1em 0 3em;
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .header {
+        background-image: url('../images/bg-hero-desktop.svg');
+        .nav {
+            .nav__logo {
+                img {
+                    width: 12em;
+                }
+            }
+            .nav__cta {
+                font-size: 1.6rem;
+            }
+        }
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            align-items: center;
+            padding: 4em 0;
+            .data__container {
+                .data__title {
+                    text-align: start;
+                    font-size: 2.7rem;
+                }
+                .data__paragraph {
+                    text-align: start;
+                    font-size: 1.6rem;
+                    margin: 1em 0;
+                }
+                .data__cta {
+                    margin: 0 0 2em;
+                    font-size: 1.6rem;
+                }
+            }
+            .data__illustration {
+                margin: 0 0 3em;
+            }
+        }
+    }
+}
